@@ -1,0 +1,163 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333; /* Dark gray for text */
+    background-color: #f4f4f9; /* Light gray background */
+}
+
+/* Header and Footer */
+.header {
+    background-color: #1e3a8a; /* Deep blue */
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #1e3a8a; /* Matching deep blue */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Navigation */
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #3b82f6; /* Bright blue for nav background */
+    padding: 10px 0;
+    margin: 0;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff; /* White text */
+    padding: 0 15px;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #ffb703; /* Yellow for hover effect */
+}
+
+/* Grid Layout for Main Content */
+.main {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.featured-article {
+    grid-column: span 2;
+    background-color: #e0f2fe; /* Light blue */
+    color: #1e3a8a; /* Deep blue text */
+    padding: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: 1px solid #60a5fa; /* Medium blue border */
+    border-radius: 8px;
+}
+
+.article {
+    background-color: #f1f5f9; /* Soft gray-blue */
+    color: #334155; /* Darker gray for text */
+    padding: 20px;
+    border: 1px solid #cbd5e1; /* Light border */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article:hover {
+    background-color: #e2e8f0; /* Slightly darker on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.article h2 {
+    color: #1e40af; /* Bold navy blue for article titles */
+}
+
+.article a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #3b82f6; /* Bright blue for button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.article a:hover {
+    background-color: #2563eb; /* Slightly darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-article {
+        grid-column: span 1;
+    }
+}
+
+/* Section Styling */
+section {
+    padding: 30px 15px;
+    margin: 20px 0; /* Space between sections */
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto; /* Center sections */
+}
+
+/* Individual section styles */
+.home-section {
+    background-color: #f0f4f8; /* Light blue */
+    border: 1px solid #d1e3f2;
+}
+
+.world-section {
+    background-color: #fff5e1; /* Light orange */
+    border: 1px solid #f5d3a3;
+}
+
+.tech-section {
+    background-color: #e8f7e8; /* Light green */
+    border: 1px solid #b3d8b3;
+}
+
+.sports-section {
+    background-color: #f9e8e8; /* Light red */
+    border: 1px solid #e5b3b3;
+}
+
+/* Article styling within sections */
+article {
+    margin-bottom: 15px; /* Space between articles */
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+article:last-child {
+    border-bottom: none; /* Remove border from the last article */
+}
